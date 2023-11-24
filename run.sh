@@ -14,7 +14,8 @@ chmod 700 vpnserver vpncmd
 ./vpncmd
 echo "1\n"
 echo "ServerPasswordSet\n"
-
+echo "Press Enter to continue."
+read
 sudo cat >> /lib/systemd/system/vpnserver.service << EOF
 [Unit]
 Description=SoftEther VPN Server
